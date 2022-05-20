@@ -839,7 +839,7 @@
     (property "Value" "Conn_01x04" (id 1) (at 84.582 80.0886 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_Molex:Molex_PicoBlade_53048-0410_1x04_P1.25mm_Horizontal" (id 2) (at 84.582 85.09 0)
+    (property "Footprint" "Connector_Molex:Molex_Panelmate_53780-0470_1x04-1MP_P1.25mm_Horizontal" (id 2) (at 84.582 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 84.582 85.09 0)
@@ -1224,14 +1224,6 @@
     (property "Sheet file" "STM1_CAN.kicad_sch" (id 1) (at 147.066 115.6466 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (pin "USB_DP" bidirectional (at 147.066 112.268 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 0d283afb-e886-4cd8-a8e8-682498469bd1)
-    )
-    (pin "USB_DM" bidirectional (at 147.066 109.728 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 326986b8-201a-47b7-98c2-7f1da472dfd4)
-    )
     (pin "CAN_L" bidirectional (at 164.592 112.268 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 4b05ee38-97f2-4c18-b242-dbcc019feef5)
@@ -1239,6 +1231,14 @@
     (pin "CAN_H" bidirectional (at 164.592 109.728 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid cddfcb3e-8889-4629-b196-b3d92286a3d2)
+    )
+    (pin "USB_D-" bidirectional (at 147.066 109.728 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid aeba2d9c-dc46-4110-b4af-be90f3c06975)
+    )
+    (pin "USB_D+" bidirectional (at 147.066 112.268 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid e62daa5b-cf3b-4770-a4e7-68d7e6df2739)
     )
   )
 
@@ -1252,14 +1252,6 @@
     (property "Sheet file" "STM2_CAN.kicad_sch" (id 1) (at 147.066 128.3466 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (pin "USB_DP" bidirectional (at 147.066 124.206 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid be5beb35-546b-43c4-a0e6-1ba405c1caa6)
-    )
-    (pin "USB_DM" bidirectional (at 147.066 121.666 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 0c0f5870-bd74-443e-bd63-40fca73df395)
-    )
     (pin "CAN_L" bidirectional (at 164.338 124.206 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid b273ac1b-705c-453a-83ce-5c98359bf5a3)
@@ -1267,6 +1259,14 @@
     (pin "CAN_H" bidirectional (at 164.338 121.666 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 31be4ece-97ca-4a4a-b56b-b649612e9f58)
+    )
+    (pin "USB_D-" bidirectional (at 147.066 121.666 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid eed0e3cc-b236-4cf4-b6f4-ad34de263861)
+    )
+    (pin "USB_D+" bidirectional (at 147.066 124.206 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 9c583e6c-1444-4698-9e3a-36a05d89080f)
     )
   )
 
@@ -1440,18 +1440,6 @@
     )
     (path "/35264ca2-620d-4eea-a665-32a8d59c639c"
       (reference "#PWR034") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/863ee6bd-9a8e-49fb-84d6-8d00fe76baf1/655fcadd-68be-4ec1-b070-858ca61166ea"
-      (reference "#PWR035") (unit 1) (value "VCC") (footprint "")
-    )
-    (path "/863ee6bd-9a8e-49fb-84d6-8d00fe76baf1/a30fb8c9-05d6-46dc-bc65-ac4f5e35ccd1"
-      (reference "#PWR036") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/9b90d3c5-a48b-42a5-8d7c-de34d4b66dbc/5784f0ea-0d0f-4a00-beeb-c20d277e2803"
-      (reference "#PWR037") (unit 1) (value "VCC") (footprint "")
-    )
-    (path "/9b90d3c5-a48b-42a5-8d7c-de34d4b66dbc/1528ec23-0172-4ce4-b199-19e9aa5f9b8d"
-      (reference "#PWR038") (unit 1) (value "GND") (footprint "")
     )
     (path "/863ee6bd-9a8e-49fb-84d6-8d00fe76baf1/e4e7f92b-762c-4d66-a27a-28f122ae3c86"
       (reference "#PWR0101") (unit 1) (value "VCC") (footprint "")
@@ -1709,7 +1697,7 @@
       (reference "D8") (unit 1) (value "LED") (footprint "LED_SMD:LED_0603_1608Metric")
     )
     (path "/3d353840-3aaf-44c3-860e-5387613b4726"
-      (reference "J1") (unit 1) (value "Conn_01x04") (footprint "Connector_Molex:Molex_PicoBlade_53048-0410_1x04_P1.25mm_Horizontal")
+      (reference "J1") (unit 1) (value "Conn_01x04") (footprint "Connector_Molex:Molex_Panelmate_53780-0470_1x04-1MP_P1.25mm_Horizontal")
     )
     (path "/e547fe25-99ba-4e40-b44f-26baa2850f1a"
       (reference "J2") (unit 1) (value "Conn_01x03") (footprint "Connector_JST:JST_GH_SM03B-GHS-TB_1x03-1MP_P1.25mm_Horizontal")
@@ -1723,13 +1711,7 @@
     (path "/b3791515-85aa-466b-b510-cb45412b4ef0"
       (reference "J5") (unit 1) (value "Conn_01x02") (footprint "Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal")
     )
-    (path "/863ee6bd-9a8e-49fb-84d6-8d00fe76baf1/d052fbd0-3edb-438a-9023-a492dd381006"
-      (reference "J6") (unit 1) (value "Conn_01x04") (footprint "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical")
-    )
-    (path "/9b90d3c5-a48b-42a5-8d7c-de34d4b66dbc/a4956195-9595-410b-8691-21adeee0fc23"
-      (reference "J7") (unit 1) (value "Conn_01x04") (footprint "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical")
-    )
-    (path "/71b07c00-0314-4dfd-92cb-aca2c9812e1b/0322e890-da8e-42af-9b88-ae693ad0c229"
+    (path "/71b07c00-0314-4dfd-92cb-aca2c9812e1b/e5588e62-caec-4581-8753-afa8055836e7"
       (reference "Q1") (unit 1) (value "S8050") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/863ee6bd-9a8e-49fb-84d6-8d00fe76baf1/861a1b77-8d32-45dc-b372-793a5f03176d"
