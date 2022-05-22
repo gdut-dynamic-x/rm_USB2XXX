@@ -839,7 +839,7 @@
     (property "Value" "Conn_01x04" (id 1) (at 84.582 80.0886 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_Molex:Molex_Panelmate_53780-0470_1x04-1MP_P1.25mm_Horizontal" (id 2) (at 84.582 85.09 0)
+    (property "Footprint" "Connector_Molex:Molex_CLIK-Mate_502386-0470_1x04-1MP_P1.25mm_Horizontal" (id 2) (at 84.582 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 84.582 85.09 0)
@@ -1697,7 +1697,7 @@
       (reference "D8") (unit 1) (value "LED") (footprint "LED_SMD:LED_0603_1608Metric")
     )
     (path "/3d353840-3aaf-44c3-860e-5387613b4726"
-      (reference "J1") (unit 1) (value "Conn_01x04") (footprint "Connector_Molex:Molex_Panelmate_53780-0470_1x04-1MP_P1.25mm_Horizontal")
+      (reference "J1") (unit 1) (value "Conn_01x04") (footprint "Connector_Molex:Molex_CLIK-Mate_502386-0470_1x04-1MP_P1.25mm_Horizontal")
     )
     (path "/e547fe25-99ba-4e40-b44f-26baa2850f1a"
       (reference "J2") (unit 1) (value "Conn_01x03") (footprint "Connector_JST:JST_GH_SM03B-GHS-TB_1x03-1MP_P1.25mm_Horizontal")
